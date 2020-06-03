@@ -1,0 +1,253 @@
+/* Custom Variables */
+
+:root {
+	--main-white: #e8eced;
+	--main-lightgray: #9c9b99;
+	--main-darkgray: #6c727b;
+	--main-lightblue: #2887db;
+	--main-darkblue: #292e42;
+}
+
+/* Base Reset */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+/* Base Styles */
+
+html {
+	scroll-behavior: smooth;
+	font-size: 62.5%;
+}
+
+body {
+	font-family: "Inter", Helvetica;
+	line-height: 1.4;
+}
+
+a {
+	text-decoration: none;
+	color: var(--main-darkgray);
+}
+
+a:visited {
+	color: var(--main-lightgray);
+}
+
+.container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 0 auto;
+}
+
+.container-2,
+.container-3,
+.container-5 {
+	justify-content: center;
+}
+
+/* Nav Section */
+
+.nav-item {
+	list-style-type: none;
+	font-size: 1.5rem;
+}
+
+#navbar {
+	justify-content: flex-end;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background-color: var(--main-darkblue);
+}
+
+.box-1 {
+	box-sizing: border-box;
+	align-self: stretch;
+}
+
+.box-1 a {
+	display: block;
+	color: var(--main-white);
+	padding: 15px 25px;
+}
+
+.box-1 a:link {
+	text-decoration: none;
+}
+
+.box-1 a:hover {
+	background-color: var(--main-lightblue);
+}
+
+/* Welcome Section */
+
+#welcome-section {
+	background-color: var(--main-white);
+	text-align: center;
+	height: 100vh;
+}
+
+h1 {
+	color: var(--main-lightblue);
+	margin-top: 20rem;
+	font-size: 5.5rem;
+}
+
+#welcome-section p {
+	font-size: 3rem;
+	padding: 3rem 0rem;
+	color: var(--main-darkblue);
+	font-weight: 600;
+}
+
+hr {
+	margin: 2rem 0rem;
+	width: 100%;
+	display: inline-block;
+}
+
+.box-2 li {
+	list-style-type: none;
+	font-size: 2.5rem;
+	padding: 1rem 0rem;
+	color: var(--main-darkblue);
+}
+
+.box-2 li:first-of-type {
+	margin: 1.5rem 0rem 5rem;
+}
+
+.box-2 li:nth-of-type(n + 2) {
+	opacity: 80%;
+	font-style: italic;
+}
+
+/* Projects Section */
+
+#projects {
+	background: #8e9eab; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #eef2f3, #8e9eab); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to left,
+		#eef2f3,
+		#8e9eab
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.container-4 {
+	padding-bottom: 4rem;
+}
+.box-3,
+.box-4 {
+	display: grid;
+	margin: 0 auto;
+}
+.box-3 h1 {
+	margin: 8rem 0 3rem 0;
+}
+.box-4 img {
+	width: 60rem;
+	margin: 5rem 5rem 0.5rem 5rem;
+	border-top-left-radius: 0.5em;
+	border-top-right-radius: 0.5em;
+}
+.box-4 p {
+	width: 600px;
+	text-align: center;
+	margin: 0 auto;
+	color: var(--main-white);
+	background-color: var(--main-darkgray);
+	padding: 1rem 0;
+	font-size: 2rem;
+}
+.box-4 p:hover,
+img:hover {
+	background-color: var(--main-darkblue);
+	color: var(--main-lightblue);
+	box-shadow: 1px 1px var(--main-lightblue), 2px 2px var(--main-lightblue), 3px 3px var(--main-lightblue);
+	-webkit-transform: translateX(-3px);
+	transform: translateX(-3px);
+}
+/* Contact Section */
+#contact-section {
+	background-color: var(--main-white);
+	height: 80vh;
+}
+.box-5 {
+	text-align: center;
+	align-self: center;
+	font-size: 3rem;
+}
+.box-5 p {
+	padding: 6rem 1rem;
+	font-size: 4rem;
+	font-weight: 500;
+	color: var(--main-darkgray);
+}
+.box-5 a {
+	padding: 3rem 1rem;
+	font-size: 3rem;
+	font-weight: 600;
+	color: var(--main-darkgray);
+}
+.box-5 a {
+	overflow: hidden;
+	background: linear-gradient(to right, var(--main-lightblue), var(--main-lightblue) 50%, var(--main-darkblue) 50%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-size: 200% 100%;
+	background-position: 100%;
+	transition: background-position 500ms ease;
+}
+.box-5 a:hover {
+	background-position: 0 100%;
+}
+/* Footer Section */
+.container-6 {
+	position: absolute;
+	width: 100%;
+	padding: 1rem 0 0 0;
+	background-color: var(--main-darkblue);
+	color: var(--main-white);
+	justify-content: center;
+	font-size: 1.5rem;
+}
+.box-6 {
+	box-sizing: border-box;
+	text-align: center;
+}
+#icon-footer-2 {
+	color: var(--main-white);
+	padding: 1rem 0;
+}
+/* Media Queries */
+@media only screen and (max-width: 60rem) {
+	#welcome-section h1,
+	#projects h1 {
+		font-size: 4.5rem;
+		text-align: center;
+	}
+	#welcome-section p {
+		font-size: 2.5rem;
+	}
+	.box-2 li {
+		font-size: 2rem;
+	}
+}
+@media screen and (max-width: 32rem) {
+	.nav-item {
+		font-size: 1.2rem;
+	}
+}
